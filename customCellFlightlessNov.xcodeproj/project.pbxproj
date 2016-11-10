@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9551B3DB1DD503B100E0FA25 /* ButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9551B3DA1DD503B100E0FA25 /* ButtonDelegate.swift */; };
+		95ECCB901DD52895003265FB /* CustomCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95ECCB8F1DD52895003265FB /* CustomCellDelegate.swift */; };
 		95F041AD1DD4FACE00FF747E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F041AC1DD4FACE00FF747E /* AppDelegate.swift */; };
 		95F041AF1DD4FACE00FF747E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F041AE1DD4FACE00FF747E /* TableViewController.swift */; };
 		95F041B21DD4FACE00FF747E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F041B01DD4FACE00FF747E /* Main.storyboard */; };
@@ -36,7 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9551B3DA1DD503B100E0FA25 /* ButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonDelegate.swift; sourceTree = "<group>"; };
+		95ECCB8F1DD52895003265FB /* CustomCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellDelegate.swift; sourceTree = "<group>"; };
 		95F041A91DD4FACE00FF747E /* customCellFlightlessNov.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customCellFlightlessNov.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F041AC1DD4FACE00FF747E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95F041AE1DD4FACE00FF747E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				95F041B51DD4FACE00FF747E /* LaunchScreen.storyboard */,
 				95F041B81DD4FACE00FF747E /* Info.plist */,
 				95F041DA1DD501A100FF747E /* CustomCell.swift */,
-				9551B3DA1DD503B100E0FA25 /* ButtonDelegate.swift */,
+				95ECCB8F1DD52895003265FB /* CustomCellDelegate.swift */,
 			);
 			path = customCellFlightlessNov;
 			sourceTree = "<group>";
@@ -267,8 +267,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				95F041AF1DD4FACE00FF747E /* TableViewController.swift in Sources */,
+				95ECCB901DD52895003265FB /* CustomCellDelegate.swift in Sources */,
 				95F041DB1DD501A100FF747E /* CustomCell.swift in Sources */,
-				9551B3DB1DD503B100E0FA25 /* ButtonDelegate.swift in Sources */,
 				95F041AD1DD4FACE00FF747E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

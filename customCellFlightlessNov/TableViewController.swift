@@ -8,7 +8,9 @@
 
 import UIKit
 
-class TableViewController: UITableViewController, ButtonDelegate {
+class TableViewController: UITableViewController, CustomCellDelegate {
+    
+    let flightlessbirds = ["ostrich", "kiwi", "penguin"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,22 +18,23 @@ class TableViewController: UITableViewController, ButtonDelegate {
         print("view did load!!!!!!")
         // Do any additional setup after loading the view, typically from a nib.
     }
-    let birds = ["ostrich", "kiwi", "penguin"]
+
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("CustomCell") as! CustomCell
         cell.buttonDelegate = self
-        cell.customCellLabel.text = birds[indexPath.row]
-        //cell.customCellImage.image = UIImage(named: "ostrich")
+        cell.customCellLabel.text = "My bird is \(flightlessbirds[indexPath.row])"
         return cell
     }
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return birds.count
+        return flightlessbirds.count
     }
     
-    func buttonWasPressedFrom(sender: CustomCell) {
-        sender.customCellImage.image = UIImage(named: sender.customCellLabel.text!)
+    func pictureButtonWasPressed(sender: CustomCell) {
+        print ("Delegate received the message")
+        let index = tableView.indexPathForCell(sender as UITableViewCell)?.row
+        sender.customCellImage.image = UIImage(named: flightlessbirds[index!])
     }
     
     

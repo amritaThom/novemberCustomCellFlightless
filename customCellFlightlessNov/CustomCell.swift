@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 
 class CustomCell: UITableViewCell {
-    
-    var buttonDelegate: ButtonDelegate?
+    var buttonDelegate : CustomCellDelegate?
+
     
     @IBOutlet weak var customCellLabel: UILabel!
     
@@ -19,7 +19,7 @@ class CustomCell: UITableViewCell {
     
     @IBAction func customCellButton(sender: UIButton) {
         print("Button pressed")
-        buttonDelegate?.buttonWasPressedFrom(self)
+        buttonDelegate?.pictureButtonWasPressed(self)
     }
     
     
